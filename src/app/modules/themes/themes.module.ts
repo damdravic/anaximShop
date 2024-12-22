@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ThemesComponent } from './themes/themes.component';
 import { DefaultComponent } from './default/default.component';
-import { DarkComponent } from './dark/dark.component';
+
 import { ThemesRoutingModule } from './themes-routing.module';
 
 
@@ -11,7 +11,7 @@ import { ThemesRoutingModule } from './themes-routing.module';
   declarations: [
     ThemesComponent,
     DefaultComponent,
-    DarkComponent
+   
   ],
   imports: [
     CommonModule,
@@ -20,7 +20,7 @@ import { ThemesRoutingModule } from './themes-routing.module';
   exports: [
     ThemesComponent,
     DefaultComponent,
-    DarkComponent
+
   ]
 
 })

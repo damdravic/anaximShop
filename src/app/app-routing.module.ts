@@ -6,7 +6,7 @@ import { LayoutComponent } from './layout/layout.component';
  
 const routes: Routes = [
  { path: '',
-  redirectTo: '/themes/defaultm',
+  redirectTo: '/themes/default',
   pathMatch: 'full'
 },
 {

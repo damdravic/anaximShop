@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ModeService } from 'src/app/core/services/mode.service';
 
 @Component({
   selector: 'app-default',
@@ -7,6 +8,12 @@ import { Component, Input } from '@angular/core';
 })
 export class DefaultComponent {
 
-@Input () slug? : string | null = null;
+@Input() slug : string | null = null;
+
+  constructor( private modeService :  ModeService) { }
+
+changeTheme() {
+     this.modeService.switchMode();
+}
 
 }
