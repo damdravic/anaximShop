@@ -6,18 +6,22 @@ import { AppComponent } from './app.component';
 import { MaintenanceComponent } from './maintenance/maintenance.component';
 import { LayoutComponent } from './layout/layout.component';
 import { ThemesModule } from './modules/themes/themes.module';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MaintenanceComponent,
-    LayoutComponent
+    LayoutComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ThemesModule
+    ThemesModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
